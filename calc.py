@@ -9,7 +9,10 @@ def subtract(x, y):
 def multiply(x, y):
     """Multiply Function"""
     return x*y
-    
+
 def divide(x, y):
     """Divide  Function"""
+    if y == 0:
+        raise ValueError('you cannot divide by zero!')
+
     return x/y
